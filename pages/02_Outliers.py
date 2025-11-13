@@ -11,7 +11,11 @@ import plotly.express as px
 import plotly.graph_objects as go
 
 # ---------- CONFIG ----------
-DEFAULT_NDVI_PATH = r"C:\Users\habdulhaq\Desktop\python\class_geomath_msc\ndvi_Algyo.tif"
+import warnings
+from pathlib import Path
+
+# Default path to the NDVI GeoTIFF file
+DEFAULT_NDVI_PATH = r"C:\Users\habdulhaq\Desktop\python\class_geomath_msc\ndvi_szeged.tif"
 DOWNSAMPLE_MAX = 900  # max width/height for on-screen images
 
 # Optional SciPy for clustering/density; gracefully degrade if not available

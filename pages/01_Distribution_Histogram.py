@@ -7,7 +7,15 @@ import rasterio
 import plotly.express as px
 
 # ---------- CONFIG ----------
-DEFAULT_NDVI_PATH = r"C:\Users\habdulhaq\Desktop\python\class_geomath_msc\ndvi_Algyo.tif"
+import streamlit as st
+import numpy as np
+import matplotlib.pyplot as plt
+from matplotlib import cm
+from scipy import stats
+import warnings
+
+
+DEFAULT_NDVI_PATH = r"C:\Users\habdulhaq\Desktop\python\class_geomath_msc\ndvi_szeged.tif"
 DOWNSAMPLE_MAX = 800  # max dimension for displayed images
 
 
